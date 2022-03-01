@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        nav {
+            width: 960px;
+            height: 55px;
+            background: red;
+        }
+        
+        .menu li {
+            width: 140px;
+            height: 50px;
+            list-style-type: none;
+            float: left;
+            line-height: 50px;
+            text-indent: 5px;
+            display: inline;
+        }
+        
+        .menu li:hover {
+            background-color: green;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        li:hover>a {
+            color: gold
+        }
+        
+        nav span {
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+            float: red;
+            padding: 15px;
+        }
+        
+        nav span button {
+            border-radius: 50%;
+            background-color: #0099FF;
+            color: white;
+            font-size: 14px;
+            padding: 3px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu" name="menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="contact.html" style="color: aqua;">CONTACT</a></li>
+        </ul>
+        <span>
+            SEARCH:&nbsp;
+            <input type="text" size="18" placeholder="Search here..."/>
+            <button>Go</button>
+        </span>
+    </nav>
+</body>
+
+</html>
