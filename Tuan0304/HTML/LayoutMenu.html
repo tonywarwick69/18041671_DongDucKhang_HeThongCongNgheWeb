@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: auto;
+        }
+        
+        .wrapper {
+            height: 700px;
+            width: 100px;
+            background-color: white;
+        }
+        
+        header {
+            height: 150px;
+            width: 1000px;
+            background-image: url(../img/1081461.png);
+        }
+        
+        nav {
+            height: 50px;
+            width: 1000px;
+            background-color: aquamarine;
+            line-height: 50px;
+        }
+        
+        body {
+            background-image: url(../img/1081461.png);
+        }
+        
+        .content {
+            height: 300px;
+            width: 1089px;
+            background-color: blueviolet;
+        }
+        
+        footer {
+            height: 200px;
+            width: 1089px;
+            background-color: burlywood;
+        }
+        
+        aside {
+            height: 100%;
+            width: 40%;
+            background-color: chocolate;
+            float: left;
+        }
+        
+        section {
+            height: 300px;
+            width: 60%;
+            background-color: darkmagenta;
+            float: left;
+        }
+        
+        .menu li {
+            height: 100%;
+            width: 200px;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-indent: 15px;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: coral;
+        }
+        
+        .menu li:hover {
+            background-color: gold;
+        }
+        
+        li:hover>a {
+            font-style: italic;
+            font-weight: bold;
+            color: hotpink;
+        }
+        
+        .menu li .submenu {
+            display: none;
+            position: absolute;
+        }
+        
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <nav>
+            <ul class="menu">
+                <li><a href=""> Item 1</a></li>
+                <li><a href=""> Item 2</a></li>
+                <li><a href=""> Item 3</a></li>
+                <li><a href=""> Item 4</a>
+                    <ul class="submenu">
+                        <li><a href=""> Item 4.1</a></li>
+                        <li><a href=""> Item 4.2</a></li>
+                        <li><a href=""> Item 4.3</a></li>
+                    </ul>
+                </li>
+                <li><a href=""> Item 5</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside>
+                <article>
+
+                </article>
+            </aside>
+            <section>
+                <article>
+
+                </article>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
