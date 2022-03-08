@@ -15,51 +15,51 @@
             border: 1px solid black;
         }
         
+        .top-menu {
+            height: 50px;
+            width: 100%;
+        }
+        
         th,
         td {
             border: 1px solid black;
         }
         
-        table.a {
-            table-layout: auto;
-            width: 100%;
+        .header {
+            height: 150px;
         }
         
-        table.b {
-            table-layout: fixed;
-            width: 100;
+        .menuleft-content {
+            height: 400px;
         }
         
-        table.c {
-            table-layout: auto;
-            width: 100%;
-        }
-        
-        table.d {
-            table-layout: fixed;
-            width: 100%;
+        .footer {
+            height: 130px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>The table-layout Property</h1>
+
     <table>
-        <tr>
-            <th>Top menu</th>
-            <tr>
-                <td> <img src="../IMG/konosuba_anime_film_2018_image2.jpg" width="70%" align="right" height="150px" ;></td>
-
-            </tr>
-        </tr>
-
-        <tr>
-            <td>Maria</td>
+        <tr class="top-menu">
+            <th colspan="2">Top menu</th>
 
         </tr>
-        <tr>
-            <td>Louis</td>
+        <tr class="header">
+            <td colspan="2"> <img src="../IMG/konosuba_anime_film_2018_image2.jpg" width="70%" align="right" height="150px" ;></td>
+
+        </tr>
+
+        <tr class="menuleft-content">
+            <td>Menu left</td>
+            <td>Content</td>
+
+
+        </tr>
+        <tr class="footer">
+            <td colspan="2"> Footer</td>
 
         </tr>
     </table>
