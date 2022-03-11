@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0px auto; padding:0px;}
+        body{background-image: url(../img/4.jpg);}
+        .wrapper{width: 100%; height:800px; background-color: antiquewhite;}
+        nav{ width: 1089px; height: 50px; line-height: 50px; background-color: aqua;}
+        .menu li{ float:left; height: 100%; width: 150px; background-color: aqua;}
+        .menu li:hover{background-color: red;}
+        li:hover>a{color:gold; font-style: italic;}
+        .menu li .submenu{ display: none;}
+        header{height: 150px; width: 100%; background-image: url(../img/5.jpg);
+        text-shadow: 5px 20px 10px gray; font-size: 60px; text-align: center;}
+        aside{width: 400px; height:100%; float:left;}
+        section{width: 689px; height: 100%;float: left;}
+        .clear{clear:both}
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="http://iuh.edu.vn/" target="_blank">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                    <ul class="submenu">
+                        <li><a href="">PHONE</a></li>
+                        <li><a href="">INTERNET</a></li>
+                        <li><a href="">TV</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+            <span>
+                <form action="" method="post">
+                    <label for="lblEmail">Email: </label>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="Nhap Email">
+                    <input type="submit" value="GO" style="border-radius: 50%;padding: 3px;">
+                </form>
+            </span>
+        </nav>
+        <header>Dau trang</header>
+        <div class="content">
+            <aside>
+                <article>
+                    <h2>HOAT DONG 1</h2>
+                    <img src="../img/1.jpg" alt=""srcset="">
+                </article>
+                <article>
+                    <h2>HOAT DONG 2</h2>
+                    <img src="../img/2.jpg" alt=""srcset="">
+                </article>
+                <article>
+                    <h2>HOAT DONG 3</h2>
+                    <img src="../img/3.jpg" alt=""srcset="">
+                </article>
+            </aside>
+            <section>
+                <form action="" method="post"></form>
+            </section>
+        </div>
+        <div class="clear">
+            <footer>Chan trang</footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
